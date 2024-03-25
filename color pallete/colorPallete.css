@@ -24,6 +24,10 @@ body{
 }
 
 .container{
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Align to the middle vertically */
+    left: 50%; /* Align to the middle horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
     display: flex;
     justify-content: center;
     align-items: center;
