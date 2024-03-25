@@ -1,0 +1,2 @@
+//live version of this website
+https://coawareness-covid19-awareness-website.netlify.app
