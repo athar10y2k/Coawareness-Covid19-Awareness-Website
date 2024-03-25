@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#F285C1;
+    --secondary-color:#401739;
+    --bg-color:#fff3fa;
+    --text-primary-color:#F2EBDC;
+    --padding-inline-section:20px;
+}
+
+.container{
+    max-width: 1180px;
+    margin-inline:auto;
+    padding-inline:var(--padding-inline-section) ;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 5.5rem;
+    color: var(--secondary-color);
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: var(--secondary-color);
+}
+
+h3{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+
+ul{
+    list-style: none;
+}
+
+/* top-banner */
+.top-banner{
+    background-color: var(--secondary-color);
+    background-image: url(images/design\ pattern.png);
+    background-size: 30px;
+    /* filter: blur(5px); */
+}
+
+.banner-text{
+    color: var(--text-primary-color);
+    padding: 15px 30px;
+    text-align: center;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+/* navbar */
+.navbar{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.logo img{
+    width:50px;
+}
+
+.nav-container{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.logo h3{
+    font-weight: 700;
+    margin-left: 5px;
+    color: var(--secondary-color);
+}
+
+.nav-links ul{
+    gap:20px;
+    justify-content: end;
+}
+
+.nav-links{
+    flex-basis: 730px;
+    transition: .3s ease-out;
+}
+
+.primary-button{
+    background-color: var(--secondary-color);
+    color: var(--bg-color) !important;
+    padding: 10px 16px;
+    border-radius: 100px;
+    transition: .3s ease-out !important;
+    cursor: pointer;
+    font-weight: 600 !important;
+    box-shadow: rgba(63, 6, 26, 0.695) 0px 10px 50px;
+}
+
+.primary-button:hover{
+    /* background-color: #702163; */
+    background-color: var(--primary-color);
+    box-shadow: rgba(255, 104, 160, 0.899) 0px 10px 50px;
+}
+
+.secondary-button{
+    border:1px solid var(--secondary-color);
+    color: var(--secondary-color) !important;
+    padding: 10px 16px;
+    border-radius: 100px;
+    transition: .3s ease-out !important;
+    cursor: pointer;
+    font-weight: 600 !important;
+}
+
+.secondary-button:hover{
+    border:1px solid var(--primary-color);
+    color: var(--primary-color) !important;
+}
+
+.hover-link{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: .3s ease-out;
+}
+
+.hover-link:hover{
+    color: var(--primary-color);
+    /* text-decoration: underline; */
+}
+
+
+/* header */
+
+header{
+    padding: 50px var(--padding-inline-section);
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-right img{
+    width: 500px;
+}
+
+.header-left span{
+    background: rgb(255,216,237);
+background: linear-gradient(90deg, rgba(255,216,237,1) 0%, rgba(255,164,214,1) 100%);
+    /* border: 1px solid var(--secondary-color); */
+    padding: 6px 16px;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.header-left i{
+    margin-right: 8px;
+}
+
+.header-left h1{
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+.header-left p{
+    margin-top: 15px;
+    color: var(--secondary-color);
+    opacity: 0.75;
+}
+
+.make-appointment-btn{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* company logo banner section */
+
+.companies-section{
+    margin-top: 20px;
+}
+.companies-header{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.logos{
+    justify-content: space-between;
+}
+
+.logos img{
+    width: 120px;
+}
+
+
+/* why vaccinate */
+
+.upper{
+    justify-content: space-around;
+    gap: 150px;
+}
+
+.upper h2{
+    color:var(--secondary-color);
+    width: 1000px;
+    
+}
+
+.upper p{
+    color:var(--secondary-color);
+    opacity: .75;
+}
+
+.why-vaccinate-section{
+    padding: 50px var(--padding-inline-section);
+    margin-top: 20px;
+}
+
+.lower{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.card{
+    /* background: var(--primary-color); */
+    margin-top: 80px;
+    max-width: 30%;
+    padding: 30px;
+    border-radius:50px;
+    border: .5px solid #ecdee6;
+    transition: 0.3s ease-in-out;
+}
+
+.card p{
+    font-size: 1rem;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    opacity: 0.75;
+    display: none;
+    transition:0.3s ease-in-out !important;
+}
+
+.card span{
+    font-weight:500 ;
+    cursor: pointer;
+}
+.card span i{
+    margin-top: 30px;
+    margin-left: 10px;
+    transition: .3s ease-in-out;
+}
+
+.card span i:hover{
+    transform:translateX(10px)
+}
+
+.card h3{
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+
+.card:hover{
+    background: rgb(247,185,219);
+background: linear-gradient(90deg, rgba(247,185,219,1) 0%, rgba(254,195,227,1) 53%, rgba(247,185,219,1) 100%);
+    /* border:.5px solid var(--primary-color); */
+    border-radius:50px 100px 50px 50px;
+    transform: translateY(-19%);
+}
+.card:hover.card p{
+    transition:all 0.3s ease-in-out;
+    /* display: unset; */
+    display: block;
+}
+
+.card-icon{
+    background: var(--bg-color);
+    width: fit-content;
+    padding: 15px 18px;
+    border-radius: 25px;
+}
+
+.card-icon i{
+    color:var(--primary-color);
+    font-size: 40px;
+}
+
+.card-icon img{
+    width: 40px;
+}
+
+
+/* tested vaccine */
+
+.tested-vaccine-section{
+    /* position: relative;
+    top: 0; */
+    margin-top: 50px;
+    transition: all 0.7s ease-in-out !important;
+}
+
+.tested-vaccine-right{
+    background-image: url(images/Untitled.png);
+    background-size:500px;
+    background-repeat: no-repeat;
+    transition: all 0.7s ease-in-out !important;
+}
+
+.tested-vaccine-right img{
+    width: 500px;
+}
+
+.tested-vaccine-container{
+    gap:100px;
+}
+
+.tested-vaccine-left p{
+    margin-top: 20px;
+}
+
+.tested-vaccine-multi-section{
+    margin-top: 20px;
+}
+
+.tested-vaccine-left p{
+    opacity: 0.75;
+}
+
+.tested-vaccine-section i{
+    background:#F285C1;
+    padding: 10px;
+    border-radius: 14px;
+    color: var(--bg-color);
+}
+
+/* covid cases section */
+
+.covid-stats-section{
+    background-color: var(--secondary-color);
+    margin-top: 80px;
+    background-image: url(images/Corona\ Virus.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-blend-mode: luminosity;
+}
+
+.heading{
+    min-width: 100px;
+}
+
+.box h2{
+    color: var(--primary-color);
+    width: 700px;
+    text-align: center;
+}
+
+.box p{
+    color: var(--bg-color);
+    text-align: center;
+    width:800px;
+    margin-top: 20px;
+}
+
+.box{
+    justify-content: center;
+    flex-direction: column;
+    /* margin-top: 40px; */
+    padding: 40px;
+}
+
+.stat h3{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.stat h4{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.stat{
+    min-width: 23%;
+    flex-direction: column;
+    /* border: 2px solid var(--primary-color); */
+    padding: 15px 25px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    box-shadow: rgba(75, 5, 52, 0.1) 0px 1px 1px 0px inset, rgba(49, 4, 31, 0.25) 0px 50px 100px -20px, rgba(73, 12, 44, 0.3) 0px 30px 60px -30px;
+}
+
+.stats-section{
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#today-date{
+    margin-top: 40px;
+    color:var(--bg-color);
+    font-weight: 600;
+    background: rgb(247,185,219);
+background: linear-gradient(90deg, rgba(247,185,219,0) 0%, rgba(242,133,193,1) 49%, rgba(242,133,193,1) 50%, rgba(242,133,193,1) 51%, rgba(247,185,219,0) 100%);
+    width:400px;
+    padding: 4px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    text-shadow: 0 8.36px 8.896px #370624;
+}
